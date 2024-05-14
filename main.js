@@ -65,76 +65,71 @@ elements4.forEach((elements4) => {
   observer4.observe(elements4);
 });
 //Index-Home
-var swiper = new Swiper(".home-slider", {
-  grabCursor:true,
-  loop:true,
-  centeredSlides:true,
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
   autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-  },
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    delay: 5000,
+    disableOnInteraction: true,
   },
 });
 //Index-Gallery
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: "auto",
   spaceBetween: 30,
   loop: true,
-   initialSlide: 2 ,
+  initialSlide: 2,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
-},   
-pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 //Index-Testimonial
-$(document).ready(function(){
-    $(".testimonial").owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:2,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
-            }
-        }
-    });
+$(document).ready(function () {
+  $(".testimonial").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
 });
 //Index-Testimonial
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      autoplayHoverPause: true,
-      responsive: {
-          0: {
-              items: 1
-          },
-          600: {
-              items: 1
-          },
-          1000: {
-              items: 1
-          }
-      }
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+    items: 1, // Ensures only one item is shown at a time
   });
-});    
+});
