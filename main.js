@@ -121,15 +121,14 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1,
+        items: 1, // Display 1 item on screens smaller than 600px
       },
       600: {
-        items: 1,
+        items: 1, // Display 1 item on screens between 600px and 1000px
       },
       1000: {
-        items: 1,
+        items: 1, // Display 3 items on screens larger than 1000px
       },
-    },
-    items: 1, // Ensures only one item is shown at a time
+    }
   });
 });
